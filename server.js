@@ -6,7 +6,7 @@ const logger = require("./src/plugin/logger");
 const app = express();
 app.use(express.json());
 
-const authRoutes = require("./src/routes/authentication");
+const authRoutes = require("./src/routes");
 
 app.use("/api/v1/", authRoutes);
 
